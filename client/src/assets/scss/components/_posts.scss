@@ -1,0 +1,61 @@
+.app-post-card {
+    display: flex;
+    padding: 2rem;
+    border: none;
+    column-gap: 2rem;
+    background: $white;
+    box-shadow: $box-shadow-sm;
+    color: $black;
+
+    &:hover,
+    &:focus {
+        color: $black;
+    }
+
+    .app-post-card-img {
+        flex: 2;
+        max-width: 25%;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            transition: all 0.3s ease;
+            transform-origin: center;
+            will-change: transform;
+        }
+    }
+
+    .app-post-badge {
+        background: $gray-300;
+        padding: 0.4rem 1.4rem;
+        border-radius: 40px;
+        margin-bottom: 1.4rem;
+    }
+
+    .app-post-card-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .app-post-title {
+            font-size: 2rem;
+            margin-bottom: 1.2rem;
+            font-weight: bolder;
+            line-height: 1.2;
+            color: $black;
+        }
+
+        .app-post-text {
+            font-size: 1.2rem;
+        }
+
+        .app-post-meta {
+            margin-top: 1rem;
+        }
+    }
+}

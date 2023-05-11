@@ -1,0 +1,80 @@
+.be-wrapper {
+    display: flex;
+    width: 100%;
+
+    .be-wrapper-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .be-wrapper-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-top: $be-header-height;
+
+            .be-page-outer {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+// profile
+.be-page-profile {
+    position: relative;
+    padding: 1.2rem;
+    background: $white;
+    margin-bottom: 1rem;
+    box-shadow: $box-shadow-sm;
+    padding: 1rem;
+    height: 14rem;
+
+    .be-page-profile-img {
+        position: absolute;
+        bottom: 2rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    .be-page-profile-nav {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 4rem;
+    }
+
+    .be-page-profile-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 10rem;
+
+        img {
+            min-width: 100%;
+        }
+    }
+}
+
+@include mq("sm") {
+    .be-wrapper {
+        .be-wrapper-right {
+            padding-left: $be-sidebar-width;
+
+            .be-wrapper-content {
+                .be-page-outer {
+                    padding: 1rem 4rem;
+                }
+            }
+        }
+    }
+
+    // Profile
+    .be-page-profile {
+        padding: 1rem 4rem;
+    }
+}

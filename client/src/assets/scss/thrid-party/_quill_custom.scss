@@ -1,0 +1,18 @@
+.ql-container {
+    font-family: $font-family;
+    font-size: 1rem;
+}
+
+.ql-toolbar.ql-snow {
+    font-family: $font-family;
+    & * {
+        font-size: 1rem;
+    }
+}
+
+.app-quill-content {
+    .ql-container {
+        font-family: $font-family;
+        font-size: 1.2rem;
+    }
+}

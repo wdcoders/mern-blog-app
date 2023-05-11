@@ -1,0 +1,36 @@
+.app-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba($color: #ffffff, $alpha: 0.6);
+}
+
+[class*="loader-"] {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    color: inherit;
+    vertical-align: middle;
+    pointer-events: none;
+}
+
+.loader-01 {
+    border: 0.4em dotted $primary;
+    border-radius: 50%;
+    animation: 2s loader-01 linear infinite;
+}
+
+@keyframes loader-01 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

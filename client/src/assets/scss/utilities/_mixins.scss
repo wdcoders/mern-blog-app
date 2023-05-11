@@ -1,0 +1,49 @@
+// breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-xxl: 1536px;
+
+@mixin mq($breakpoint) {
+    @if ($breakpoint == "sm") {
+        @media (min-width: $breakpoint-sm) {
+            @content;
+        }
+    } @else if ($breakpoint == "md") {
+        @media (min-width: $breakpoint-md) {
+            @content;
+        }
+    } @else if ($breakpoint == "lg") {
+        @media (min-width: $breakpoint-lg) {
+            @content;
+        }
+    } @else if ($breakpoint == "xl") {
+        @media (min-width: $breakpoint-xl) {
+            @content;
+        }
+    } @else if ($breakpoint == "xxl") {
+        @media (min-width: $breakpoint-xxl) {
+            @content;
+        }
+    } @else {
+        @error "UNKNOWN MEDIA BREAKPOINT #{$breakpoint}";
+    }
+}
+
+// scrollbar
+@mixin scrollbar() {
+    &::-webkit-scrollbar-track {
+        background-color: #fff;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $primary;
+    }
+}

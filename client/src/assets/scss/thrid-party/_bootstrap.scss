@@ -1,0 +1,147 @@
+// dropdown
+.dropdown-menu {
+    min-width: 190px;
+    padding: 1rem;
+    border: none;
+    box-shadow: $box-shadow;
+
+    & > li {
+        & > a {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            border-radius: 4px;
+
+            i {
+                margin-right: 0.5rem;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+// form control
+.form-label {
+    font-weight: 500;
+
+    span {
+        color: $red;
+    }
+}
+
+// card
+.app-card {
+    border: none;
+    box-shadow: $box-shadow-sm;
+    padding: 0.6rem 1rem;
+
+    .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & > h5 {
+            margin: 0;
+            position: relative;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            color: $gray-500;
+
+            &:after {
+                content: "";
+                position: absolute;
+                height: 4px;
+                background: $gray-400;
+                width: 18%;
+                margin-top: 1rem;
+                display: block;
+            }
+        }
+    }
+
+    .card-subtitle {
+        color: $gray-500;
+    }
+}
+
+.app-post-card {
+    border: none;
+    box-shadow: $box-shadow-sm;
+    padding: 0.6rem 1rem;
+
+    .card-title {
+        margin-bottom: 0.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & h5 {
+            margin: 0;
+            position: relative;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            color: $gray-500;
+
+            &:after {
+                content: "";
+                position: absolute;
+                height: 4px;
+                background: $gray-400;
+                width: 18%;
+                margin-top: 1rem;
+                display: block;
+            }
+        }
+
+        & h2 {
+            margin: 0;
+            position: relative;
+            margin-bottom: 0.4rem;
+            font-weight: bold;
+            font-size: 1.6rem;
+            color: $primary;
+        }
+    }
+
+    .card-subtitle {
+        color: $gray-500;
+    }
+
+    .app-post-meta {
+        display: flex;
+        column-gap: 1rem;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        span {
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+}
+
+// breadcrumb
+.breadcrumb {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+// nav pills
+.nav-pills {
+    .nav-link {
+        background: $gray-100;
+        text-align: left;
+        padding: 0.8rem 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+
+        & > i {
+            font-size: 1.1rem;
+        }
+    }
+}

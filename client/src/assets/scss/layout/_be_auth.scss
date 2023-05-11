@@ -1,0 +1,18 @@
+.be-auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .be-auth-content {
+        min-width: 90%;
+    }
+}
+
+@include mq("sm") {
+    .be-auth-wrapper {
+        .be-auth-content {
+            min-width: 26rem;
+        }
+    }
+}

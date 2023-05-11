@@ -1,0 +1,17 @@
+.app-table {
+    tr {
+        th {
+            text-transform: uppercase;
+            border-bottom: 1px solid $table-border;
+            color: $table-th-text-color;
+        }
+
+        td {
+            border-bottom: 1px solid $table-border;
+        }
+    }
+}
+
+.dt-row {
+    margin-top: 1rem;
+}

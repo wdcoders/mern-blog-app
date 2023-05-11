@@ -1,0 +1,46 @@
+.be-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: $be-header-height;
+    background: $white;
+    border-bottom: 1px solid $be-border;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+
+    .btn {
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+.be-header-sub {
+    display: flex;
+    // padding: 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+    // background: $white;
+    height: $be-header-height;
+    // box-shadow: $box-shadow-sm;
+    margin-bottom: 1rem;
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .breadcrumb {
+        .breadcrumb-item {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@include mq("sm") {
+    .be-header {
+        left: 280px;
+    }
+}

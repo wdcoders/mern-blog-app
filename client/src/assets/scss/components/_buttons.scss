@@ -1,0 +1,20 @@
+.btn {
+    padding: 0.55rem 1.2rem;
+
+    &.btn-icon {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.55rem 0.8rem;
+
+        i {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    }
+
+    &.btn-rounded {
+        border-radius: 60px;
+        padding: 0.55rem 1.4rem;
+    }
+}

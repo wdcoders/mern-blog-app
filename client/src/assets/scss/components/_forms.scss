@@ -1,0 +1,22 @@
+// form control
+.form-control {
+    padding: 0.55rem 1rem;
+    border: 1px solid $gray-300;
+}
+
+.be-card-form {
+    .card {
+        border: none;
+        box-shadow: $box-shadow;
+        padding: 1rem;
+
+        .card-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        .card-subtitle {
+            color: $gray-500;
+        }
+    }
+}
